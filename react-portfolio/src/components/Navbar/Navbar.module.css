@@ -10,7 +10,7 @@ nav{
     .bars{
         position: absolute;
         right: 20px;
-        top: 45px;
+        top: 45px ;
         color: white;
     }
 
@@ -92,5 +92,35 @@ nav{
                 text-decoration: none;
             }
         }
+    }
+
+    & .mobile_button{
+        width: 100px;
+        height: 35px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+        margin-left: 35px;
+        margin-bottom: 20px;
+
+        &:hover{
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        & a{
+            text-decoration: none;
+            color: #333;
+        }
+    }
+
+}
+
+@media screen and (min-width:481px) {
+    .mobile_menu, .bars, .mobile_button{
+        display: none;
     }
 }

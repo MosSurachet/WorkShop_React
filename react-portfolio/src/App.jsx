@@ -11,6 +11,7 @@ import Portfolio from './components/Portfolio/portfolio'
 import NumberEXP from './components/NumberEXP/NumberEXP'
 import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
       <NumberEXP />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   )
 }

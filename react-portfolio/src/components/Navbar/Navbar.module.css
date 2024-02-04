@@ -1,9 +1,17 @@
 nav{
-    
+    overflow: hidden;
     background-color: #0085FF;
+    position: relative;
 
     & a{
         color:  #fff;
+    }
+
+    .bars{
+        position: absolute;
+        right: 20px;
+        top: 45px;
+        color: white;
     }
 
     & .container{
@@ -59,4 +67,30 @@ nav{
         }
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .nav_con{
+        flex-direction: column;
+        height: auto !important;
+        margin: 50px 0;
+        align-items: start !important;
+        margin-left: 30px;
+
+        & ul, .button {
+            display: none !important;
+        }
+    }
+
+    .mobile_menu{
+        list-style: none;
+
+        & li{
+            margin: 35px;
+
+            & a{
+                text-decoration: none;
+            }
+        }
+    }
 }
